@@ -9,8 +9,6 @@ class Phone {
     int numPointer = 0;
     int ch;
 
-public:
-
     void menu() {
         cout<<endl<<"--- Phone Book ---";
         cout<<endl<<"1. Save Number";
