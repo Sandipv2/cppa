@@ -1,29 +1,41 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Evenodd {
+class Evenodd
+{
     int n;
 
-    public:
+public:
+    Evenodd(); // Constructor
 
-    Evenodd() {
-        cout<<"In default constructor!"<<endl;
-        cout<<endl<<"Enter num : ";
-        cin>>n;
-
-        if (n % 2 == 0) {
-            cout<<endl<<"Its even!";
-        } else {
-            cout<<endl<<"Its odd!";
-        }
-    }
-
-    ~Evenodd (){
-        cout<<endl<<endl<<"Object terminated!";
+    // Destructor
+    ~Evenodd()
+    {
+        cout << endl<< endl<< "Object terminated!";
     }
 };
 
-int main() {
+Evenodd::Evenodd()
+{
+    cout << "In default constructor!" << endl;
+    cout << endl
+         << "Enter num : ";
+    cin >> n;
+
+    if (n % 2 == 0)
+    {
+        cout << endl
+             << "Its even!";
+    }
+    else
+    {
+        cout << endl
+             << "Its odd!";
+    }
+}
+
+int main()
+{
     Evenodd obj;
     return 0;
 }
